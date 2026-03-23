@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="Maison Malak, boutique premium de takchita et caftan marocain pour mariage, fiançailles, Eid et grandes occasions."
+  >
+  <title>Maison Malak | Takchita & Caftan Marocain</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <div class="page-glow page-glow-left"></div>
+    <div class="page-glow page-glow-right"></div>
+
+    <header class="site-header" id="top">
+      <div class="container nav-bar">
+        <a class="brand" href="#hero" aria-label="Maison Malak">
+          <span class="brand-mark">MR</span>
+          <span class="brand-copy">
+            <strong>Maison Malak</strong>
+            <span data-i18n="brandSubtitle">Maison de Takchita</span>
+          </span>
+        </a>
+
+        <button class="nav-toggle" id="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="site-nav" id="site-nav" aria-label="Navigation principale">
+          <a href="#collection" data-i18n="nav.collection">Collection</a>
+          <a href="#about" data-i18n="nav.about">Maison</a>
+          <a href="#categories" data-i18n="nav.categories">Catégories</a>
+          <a href="#testimonials" data-i18n="nav.testimonials">Avis</a>
+          <a href="#contact" data-i18n="nav.contact">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+          <div class="lang-switch" role="group" aria-label="Choix de la langue">
+            <button class="lang-button is-active" type="button" data-locale="fr">FR</button>
+            <button class="lang-button" type="button" data-locale="ar">AR</button>
+          </div>
+
+          <button class="icon-button" id="wishlist-toggle" type="button" aria-label="Favoris">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 20.6 4.35 13a4.85 4.85 0 1 1 6.86-6.86L12 6.92l.79-.78A4.85 4.85 0 0 1 19.65 13L12 20.6Z"></path>
+            </svg>
+            <span class="counter" id="wishlist-count">0</span>
+          </button>
+
+          <button class="icon-button" id="cart-toggle" type="button" aria-label="Panier">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M3 4h2l2.2 10.3a1 1 0 0 0 1 .8h8.8a1 1 0 0 0 1-.8L20 7H7"></path>
+              <circle cx="10" cy="19" r="1.6"></circle>
+              <circle cx="17" cy="19" r="1.6"></circle>
+            </svg>
+            <span class="counter" id="cart-count">0</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-section section" id="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-layout reveal">
+          <div class="hero-copy">
+            <p class="eyebrow" data-i18n="hero.eyebrow">Collection couture marocaine</p>
+            <h1 data-i18n="hero.title">Takchita Marocaine Élégante</h1>
+            <p class="hero-lead" data-i18n="hero.subtitle">
+              Des silhouettes raffinées pensées pour le mariage, les fiançailles, l'Eid et toutes les grandes célébrations.
+            </p>
+
+            <div class="hero-actions">
+              <a class="button primary" href="#collection" data-i18n="hero.ctaCollection">Voir la collection</a>
+              <a class="button secondary" href="#contact" data-i18n="hero.ctaOrder">Commander maintenant</a>
+            </div>
+
+            <div class="hero-metrics">
+              <article class="metric-card">
+                <strong>100%</strong>
+                <span data-i18n="hero.metricOne">Finitions couture & broderies main</span>
+              </article>
+              <article class="metric-card">
+                <strong>48h</strong>
+                <span data-i18n="hero.metricTwo">Réponse personnalisée pour votre commande</span>
+              </article>
+              <article class="metric-card">
+                <strong>UE</strong>
+                <span data-i18n="hero.metricThree">Livraison premium partout en Europe</span>
+              </article>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="hero-visual-card">
+              <span class="hero-badge" data-i18n="hero.badge">Nouvelle capsule cérémonie</span>
+              <img src="assets/hero-boutique.svg" alt="Takchita marocaine de luxe">
+            </div>
+
+            <div class="floating-note">
+              <span data-i18n="hero.noteLabel">Sur mesure</span>
+              <strong data-i18n="hero.noteValue">Retouches et finitions personnalisées</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section search-section">
+        <div class="container reveal">
+          <div class="filter-panel">
+            <div class="filter-panel-header">
+              <div>
+                <p class="eyebrow" data-i18n="filters.eyebrow">Sélection boutique</p>
+                <h2 data-i18n="filters.title">Trouvez votre tenue idéale</h2>
+              </div>
+              <p class="filter-caption" data-i18n="filters.caption">
+                Recherchez une takchita, filtrez par univers et ajustez votre budget en quelques secondes.
+              </p>
+            </div>
+
+            <div class="filter-grid">
+              <label class="field">
+                <span data-i18n="filters.searchLabel">Rechercher</span>
+                <div class="input-wrap">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="11" cy="11" r="6"></circle>
+                    <path d="m20 20-4.35-4.35"></path>
+                  </svg>
+                  <input id="product-search" type="search" data-i18n-placeholder="filters.searchPlaceholder" placeholder="Nom, tissu, occasion...">
+                </div>
+              </label>
+
+              <label class="field">
+                <span data-i18n="filters.categoryLabel">Catégorie</span>
+                <div class="select-wrap">
+                  <select id="category-select" aria-label="Filtre de catégorie"></select>
+                </div>
+              </label>
+
+              <label class="field">
+                <div class="price-row">
+                  <span data-i18n="filters.priceLabel">Prix maximum</span>
+                  <strong id="price-output">350 €</strong>
+                </div>
+                <input id="price-range" type="range" min="150" max="350" value="350" step="10" aria-label="Filtre de prix">
+              </label>
+            </div>
+
+            <div class="chip-row" id="filter-chips"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section categories-section" id="categories">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow" data-i18n="categories.eyebrow">Univers signature</p>
+            <h2 data-i18n="categories.title">Catégories de la boutique</h2>
+            <p data-i18n="categories.subtitle">
+              Découvrez des pièces pensées pour la mariée, les cérémonies familiales et les soirées élégantes.
+            </p>
+          </div>
+          <div class="category-grid" id="category-grid"></div>
+        </div>
+      </section>
+
+      <section class="section about-section" id="about">
+        <div class="container about-layout">
+          <div class="about-panel reveal">
+            <p class="eyebrow" data-i18n="about.eyebrow">Notre maison</p>
+            <h2 data-i18n="about.title">L'élégance marocaine entre tradition et modernité</h2>
+            <p data-i18n="about.text">
+              Maison Malak célèbre l'art de la takchita à travers des tissus nobles, des broderies lumineuses et des finitions réalisées avec soin.
+              Chaque pièce raconte une féminité marocaine raffinée, inspirée des cérémonies, du savoir-faire artisanal et du luxe discret.
+            </p>
+          </div>
+
+          <div class="about-aside reveal">
+            <div class="about-highlight">
+              <strong data-i18n="about.highlightTitle">Couture artisanale</strong>
+              <span data-i18n="about.highlightText">Perles, sfifa, brocart et détails cousus avec précision pour une allure majestueuse.</span>
+            </div>
+            <ul class="about-list">
+              <li data-i18n="about.pointOne">Tissus premium sélectionnés pour leur tombé et leur confort.</li>
+              <li data-i18n="about.pointTwo">Designs féminins inspirés des fêtes marocaines et des silhouettes contemporaines.</li>
+              <li data-i18n="about.pointThree">Service personnalisé pour retouches, confection sur commande et conseils de style.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section collection-section" id="collection">
+        <div class="container">
+          <div class="section-heading reveal collection-heading">
+            <div>
+              <p class="eyebrow" data-i18n="products.eyebrow">Pièces en vedette</p>
+              <h2 data-i18n="products.title">Collection Takchita & Caftan</h2>
+            </div>
+            <a class="link-button" href="#contact" data-i18n="products.link">Demander une création personnalisée</a>
+          </div>
+
+          <div class="product-grid" id="product-grid"></div>
+
+          <div class="empty-state hidden" id="empty-state">
+            <h3 data-i18n="products.emptyTitle">Aucun modèle trouvé</h3>
+            <p data-i18n="products.emptyText">Ajustez vos filtres ou découvrez la collection complète.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section benefits-section" id="why-us">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow" data-i18n="benefits.eyebrow">Pourquoi nous choisir</p>
+            <h2 data-i18n="benefits.title">Une expérience boutique haut de gamme</h2>
+            <p data-i18n="benefits.subtitle">
+              Chaque détail est pensé pour offrir une robe exceptionnelle et un accompagnement professionnel.
+            </p>
+          </div>
+          <div class="benefit-grid" id="benefit-grid"></div>
+        </div>
+      </section>
+
+      <section class="section testimonials-section" id="testimonials">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow" data-i18n="testimonials.eyebrow">Avis clientes</p>
+            <h2 data-i18n="testimonials.title">Des retours qui parlent d'eux-mêmes</h2>
+            <p data-i18n="testimonials.subtitle">
+              La collection est pensée pour magnifier les grands jours avec une qualité de finition irréprochable.
+            </p>
+          </div>
+          <div class="testimonial-grid" id="testimonial-grid"></div>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div class="container contact-layout">
+          <div class="contact-copy reveal">
+            <p class="eyebrow" data-i18n="contact.eyebrow">Contact & commande</p>
+            <h2 data-i18n="contact.title">Parlons de votre tenue parfaite</h2>
+            <p data-i18n="contact.text">
+              Contactez Maison Malak pour une commande, une demande de sur mesure ou un conseil personnalisé. Nous répondons rapidement avec une approche attentive et élégante.
+            </p>
+
+            <div class="contact-cards">
+              <a class="contact-card" href="mailto:alae200409rd@gmail.com">
+                <span class="contact-icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M4 6h16v12H4z"></path>
+                    <path d="m4 7 8 6 8-6"></path>
+                  </svg>
+                </span>
+                <div>
+                  <strong data-i18n="contact.mailLabel">Gmail</strong>
+                  <span>alae200409rd@gmail.com</span>
+                </div>
+              </a>
+
+              <a class="contact-card" href="https://instagram.com/alae__rdd" target="_blank" rel="noreferrer">
+                <span class="contact-icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <rect x="4" y="4" width="16" height="16" rx="5"></rect>
+                    <circle cx="12" cy="12" r="3.2"></circle>
+                    <circle cx="17.3" cy="6.7" r="1"></circle>
+                  </svg>
+                </span>
+                <div>
+                  <strong>Instagram</strong>
+                  <span>@alae__rdd</span>
+                </div>
+              </a>
+
+              <a class="contact-card" href="https://www.facebook.com/alae.rd.587" target="_blank" rel="noreferrer">
+                <span class="contact-icon">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M14 8h2V4h-2c-2.2 0-4 1.8-4 4v2H8v4h2v6h4v-6h2.2l.8-4H14V8a1 1 0 0 1 1-1Z"></path>
+                  </svg>
+                </span>
+                <div>
+                  <strong>Facebook</strong>
+                  <span>Alae Reddam</span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-form-card reveal">
+            <form id="contact-form" class="contact-form">
+              <label class="field">
+                <span data-i18n="contact.formName">Nom</span>
+                <input name="name" type="text" required data-i18n-placeholder="contact.placeholderName" placeholder="Votre nom">
+              </label>
+
+              <label class="field">
+                <span data-i18n="contact.formEmail">Email</span>
+                <input name="email" type="email" required data-i18n-placeholder="contact.placeholderEmail" placeholder="Votre email">
+              </label>
+
+              <label class="field">
+                <span data-i18n="contact.formMessage">Message</span>
+                <textarea name="message" rows="5" required data-i18n-placeholder="contact.placeholderMessage" placeholder="Décrivez votre occasion ou votre commande"></textarea>
+              </label>
+
+              <button class="button primary" type="submit" data-i18n="contact.send">Envoyer le message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand footer-brand" href="#top">
+            <span class="brand-mark">MR</span>
+            <span class="brand-copy">
+              <strong>Maison Malak</strong>
+              <span data-i18n="footer.brandText">Takchita & Caftan Marocain haut de gamme</span>
+            </span>
+          </a>
+          <p class="footer-note" data-i18n="footer.note">
+            Des créations féminines inspirées du patrimoine marocain, pensées pour célébrer vos plus beaux moments.
+          </p>
+        </div>
+
+        <div>
+          <h3 data-i18n="footer.quickLinks">Liens rapides</h3>
+          <ul class="footer-links">
+            <li><a href="#collection" data-i18n="nav.collection">Collection</a></li>
+            <li><a href="#about" data-i18n="nav.about">Maison</a></li>
+            <li><a href="#categories" data-i18n="nav.categories">Catégories</a></li>
+            <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 data-i18n="footer.categories">Catégories</h3>
+          <ul class="footer-links" id="footer-category-links"></ul>
+        </div>
+
+        <div>
+          <h3 data-i18n="footer.contact">Contact</h3>
+          <ul class="footer-links">
+            <li><a href="mailto:alae200409rd@gmail.com">alae200409rd@gmail.com</a></li>
+            <li><a href="https://instagram.com/alae__rdd" target="_blank" rel="noreferrer">@alae__rdd</a></li>
+            <li><a href="https://www.facebook.com/search/top/?q=Alae%20Reddam" target="_blank" rel="noreferrer">Alae Reddam</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <span>&copy; <span id="current-year"></span> Maison Malak.</span>
+        <span data-i18n="footer.rights">Tous droits réservés.</span>
+      </div>
+    </footer>
+  </div>
+
+  <aside class="cart-drawer" id="cart-drawer" aria-hidden="true">
+    <div class="cart-drawer-header">
+      <div>
+        <p class="eyebrow" data-i18n="cart.eyebrow">Votre sélection</p>
+        <h2 data-i18n="cart.title">Panier boutique</h2>
+      </div>
+      <button class="icon-button ghost" id="cart-close" type="button" aria-label="Fermer">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M6 6 18 18"></path>
+          <path d="M18 6 6 18"></path>
+        </svg>
+      </button>
+    </div>
+
+    <div class="cart-items" id="cart-items"></div>
+
+    <div class="cart-summary">
+      <div class="cart-total-row">
+        <span data-i18n="cart.subtotal">Sous-total</span>
+        <strong id="cart-total">0 €</strong>
+      </div>
+
+      <a class="button primary full" id="cart-order-link" href="mailto:alae200409rd@gmail.com" data-i18n="cart.order">
+        Commander la sélection
+      </a>
+      <button class="button secondary full" id="cart-continue" type="button" data-i18n="cart.continue">
+        Continuer les achats
+      </button>
+    </div>
+  </aside>
+
+  <div class="screen-overlay" id="drawer-overlay"></div>
+
+  <div class="product-modal" id="product-modal" aria-hidden="true">
+    <div class="product-modal-card">
+      <button class="icon-button ghost modal-close" id="modal-close" type="button" aria-label="Fermer">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M6 6 18 18"></path>
+          <path d="M18 6 6 18"></path>
+        </svg>
+      </button>
+
+      <div class="modal-layout">
+        <div class="modal-gallery">
+          <div class="modal-main-image-wrap">
+            <img id="modal-main-image" src="" alt="">
+          </div>
+          <div class="modal-thumbnails" id="modal-thumbnails"></div>
+        </div>
+
+        <div class="modal-content">
+          <p class="eyebrow" id="modal-badge"></p>
+          <h2 id="modal-title"></h2>
+          <p class="modal-description" id="modal-description"></p>
+
+          <div class="modal-price-row">
+            <strong id="modal-price"></strong>
+            <span class="stock-pill" id="modal-stock"></span>
+          </div>
+
+          <div class="spec-grid">
+            <article class="spec-card">
+              <span data-i18n="modal.colors">Couleurs</span>
+              <strong id="modal-color"></strong>
+            </article>
+            <article class="spec-card">
+              <span data-i18n="modal.fabric">Matière</span>
+              <strong id="modal-fabric"></strong>
+            </article>
+            <article class="spec-card">
+              <span data-i18n="modal.sizes">Tailles</span>
+              <strong id="modal-sizes"></strong>
+            </article>
+            <article class="spec-card">
+              <span data-i18n="modal.delivery">Livraison</span>
+              <strong id="modal-delivery"></strong>
+            </article>
+          </div>
+
+          <div class="modal-occasion">
+            <span data-i18n="modal.occasions">Occasions</span>
+            <div class="pill-row" id="modal-occasions"></div>
+          </div>
+
+          <div class="modal-actions">
+            <button class="button primary" id="modal-add-cart" type="button" data-i18n="modal.order">
+              Commander
+            </button>
+            <a class="button secondary" href="#contact" id="modal-contact-link" data-i18n="modal.custom">
+              Contacter pour du sur mesure
+            </a>
+          </div>
+
+          <a class="text-link" id="modal-mail-link" href="mailto:alae200409rd@gmail.com" data-i18n="modal.mail">
+            Demander plus d'informations par email
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast-stack" id="toast-stack" aria-live="polite" aria-atomic="true"></div>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
