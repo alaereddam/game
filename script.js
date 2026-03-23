@@ -472,14 +472,7 @@ function bindEvents() {
     elements.navToggle.setAttribute("aria-expanded", String(isOpen));
   });
   elements.siteNav.addEventListener("click", (event) => { if (event.target.closest("a")) closeMobileNav(); });
-  elements.contactForm.addEventListener("submit", (event) => {
-    event.preventDefault();
-    const formData = new FormData(elements.contactForm);
-    const body = `${state.locale === "ar" ? "الاسم" : "Nom"}: ${formData.get("name")}\n${state.locale === "ar" ? "البريد" : "Email"}: ${formData.get("email")}\n\n${formData.get("message")}`;
-    showToast(getText("toast.formTitle"), getText("toast.formBody"));
-    window.location.href = `mailto:alae200409rd@gmail.com?subject=${encodeURIComponent(state.locale === "ar" ? "رسالة من موقع Maison Reddam" : "Message depuis le site Maison Reddam")}&body=${encodeURIComponent(body)}`;
-    elements.contactForm.reset();
-  });
+  
 }
 
 elements.currentYear.textContent = String(new Date().getFullYear());

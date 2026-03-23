@@ -298,7 +298,9 @@
           </div>
 
           <div class="contact-form-card reveal">
-            <form id="contact-form" class="contact-form">
+            <form id="contact-form" class="contact-form" action="https://formspree.io/f/mqeyrzwp" method="POST">
+              <input type="hidden" name="_subject" value="Nuevo mensaje desde Atelier Luxe">
+              <input type="hidden" name="_captcha" value="false">
               <label class="field">
                 <span data-i18n="contact.formName">Nom</span>
                 <input name="name" type="text" required data-i18n-placeholder="contact.placeholderName" placeholder="Votre nom">
@@ -313,7 +315,7 @@
                 <span data-i18n="contact.formMessage">Message</span>
                 <textarea name="message" rows="5" required data-i18n-placeholder="contact.placeholderMessage" placeholder="Décrivez votre occasion ou votre commande"></textarea>
               </label>
-
+              
               <button class="button primary" type="submit" data-i18n="contact.send">Envoyer le message</button>
             </form>
           </div>
