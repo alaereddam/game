@@ -246,25 +246,34 @@ function updateCartOrderLink(cartItems, totalAmount) {
   const phoneNumber = "34642295198";
 
   if (!cartItems.length) {
-    const emptyMessage = state.locale === "ar"
-      ? "مرحبا، أريد معلومات أكثر حول منتجات المتجر."
-      : "Bonjour, je souhaite plus d'informations sur vos produits.";
+    const emptyMessage =
+      state.locale === "ar"
+        ? "مرحبا، أريد معلومات أكثر حول منتجات المتجر."
+        : state.locale === "es"
+        ? "Hola, quiero más información sobre los productos de la tienda."
+        : "Bonjour, je souhaite plus d'informations sur vos produits.";
 
     elements.cartOrderLink.href = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(emptyMessage)}`;
     return;
   }
 
-  const intro = state.locale === "ar"
-    ? "مرحبا، أريد طلب المنتجات التالية:"
-    : "Bonjour, je souhaite commander les pièces suivantes :";
+  const intro =
+    state.locale === "ar"
+      ? "مرحبا، أريد طلب المنتجات التالية:"
+      : state.locale === "es"
+      ? "Hola, quiero pedir los siguientes productos:"
+      : "Bonjour, je souhaite commander les pièces suivantes :";
 
   const lines = cartItems
     .map(({ product, quantity }) => `- ${product.names[state.locale]} x${quantity} : ${formatPrice(product.price * quantity)}`)
     .join("\n");
 
-  const totalLine = state.locale === "ar"
-    ? `المجموع: ${formatPrice(totalAmount)}`
-    : `Total: ${formatPrice(totalAmount)}`;
+  const totalLine =
+    state.locale === "ar"
+      ? `المجموع: ${formatPrice(totalAmount)}`
+      : state.locale === "es"
+      ? `Total: ${formatPrice(totalAmount)}`
+      : `Total: ${formatPrice(totalAmount)}`;
 
   const message = `${intro}\n${lines}\n\n${totalLine}`;
 
