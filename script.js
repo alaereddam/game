@@ -75,7 +75,13 @@ function getText(path) {
 }
 
 function formatPrice(value) {
-  return new Intl.NumberFormat(state.locale === "ar" ? "ar-MA" : "fr-FR", {
+  const localeMap = {
+    fr: "fr-FR",
+    es: "es-ES",
+    ar: "ar-MA"
+  };
+
+  return new Intl.NumberFormat(localeMap[state.locale] || "fr-FR", {
     style: "currency",
     currency: "EUR",
     maximumFractionDigits: 0

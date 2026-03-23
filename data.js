@@ -1,229 +1,352 @@
 window.MAISON_REDDAM_DATA = {
-  copy: {
-    fr: {
-      brandSubtitle: "Maison de Takchita",
-      nav: { collection: "Collection", about: "Maison", categories: "Catégories", testimonials: "Avis", contact: "Contact" },
-      hero: {
-        eyebrow: "Collection couture marocaine",
-        title: "Boutique de Takchita & Caftan Marocain",
-        subtitle: "Des silhouettes raffinées pensées pour le mariage, les fiançailles, l'Eid et toutes les grandes célébrations, entre savoir-faire marocain et design e-commerce haut de gamme.",
-        ctaCollection: "Voir la collection",
-        ctaOrder: "Commander maintenant",
-        metricOne: "Finitions couture & broderies main",
-        metricTwo: "Réponse personnalisée pour votre commande",
-        metricThree: "Livraison premium partout en Europe",
-        badge: "Nouvelle capsule cérémonie",
-        noteLabel: "Sur mesure",
-        noteValue: "Retouches et finitions personnalisées"
-      },
-      filters: {
-        eyebrow: "Sélection boutique",
-        title: "Trouvez votre tenue idéale",
-        caption: "Recherchez une takchita, filtrez par univers et ajustez votre budget en quelques secondes.",
-        searchLabel: "Rechercher",
-        searchPlaceholder: "Nom, tissu, occasion...",
-        categoryLabel: "Catégorie",
-        categoryAll: "Toutes les catégories",
-        priceLabel: "Prix maximum"
-      },
-      categories: {
-        eyebrow: "Univers signature",
-        title: "Catégories de la boutique",
-        subtitle: "Découvrez des pièces pensées pour la mariée, les cérémonies familiales et les soirées élégantes.",
-        pieces: "modèles"
-      },
-      about: {
-        eyebrow: "Notre maison",
-        title: "L'élégance marocaine entre tradition et modernité",
-        text: "Maison Reddam célèbre l'art de la takchita à travers des tissus nobles, des broderies lumineuses et des finitions réalisées avec soin. Chaque pièce raconte une féminité marocaine raffinée, inspirée des cérémonies, du savoir-faire artisanal et du luxe discret.",
-        highlightTitle: "Couture artisanale",
-        highlightText: "Perles, sfifa, brocart et détails cousus avec précision pour une allure majestueuse.",
-        pointOne: "Tissus premium sélectionnés pour leur tombé et leur confort.",
-        pointTwo: "Designs féminins inspirés des fêtes marocaines et des silhouettes contemporaines.",
-        pointThree: "Service personnalisé pour retouches, confection sur commande et conseils de style."
-      },
-      products: {
-        eyebrow: "Pièces en vedette",
-        title: "Collection Takchita & Caftan",
-        link: "Demander une création personnalisée",
-        emptyTitle: "Aucun modèle trouvé",
-        emptyText: "Ajustez vos filtres ou découvrez la collection complète.",
-        stock: "En stock",
-        sizes: "Tailles",
-        color: "Couleur",
-        fabric: "Matière",
-        occasion: "Occasion",
-        details: "Voir détails",
-        add: "Ajouter au panier",
-        wishlistOn: "Mode favoris activé",
-        wishlistOff: "Mode favoris désactivé"
-      },
-      benefits: {
-        eyebrow: "Pourquoi nous choisir",
-        title: "Une expérience boutique haut de gamme",
-        subtitle: "Chaque détail est pensé pour offrir une robe exceptionnelle et un accompagnement professionnel."
-      },
-      testimonials: {
-        eyebrow: "Avis clientes",
-        title: "Des retours qui parlent d'eux-mêmes",
-        subtitle: "La collection est pensée pour magnifier les grands jours avec une qualité de finition irréprochable."
-      },
-      contact: {
-        eyebrow: "Contact & commande",
-        title: "Parlons de votre tenue parfaite",
-        text: "Contactez Maison Reddam pour une commande, une demande de sur mesure ou un conseil personnalisé. Nous répondons rapidement avec une approche attentive et élégante.",
-        mailLabel: "Gmail",
-        formName: "Nom",
-        formEmail: "Email",
-        formMessage: "Message",
-        placeholderName: "Votre nom",
-        placeholderEmail: "Votre email",
-        placeholderMessage: "Décrivez votre occasion ou votre commande",
-        send: "Envoyer le message"
-      },
-      footer: {
-        brandText: "Takchita & Caftan Marocain haut de gamme",
-        note: "Des créations féminines inspirées du patrimoine marocain, pensées pour célébrer vos plus beaux moments.",
-        quickLinks: "Liens rapides",
-        categories: "Catégories",
-        contact: "Contact",
-        rights: "Tous droits réservés."
-      },
-      modal: {
-        colors: "Couleurs",
-        fabric: "Matière",
-        sizes: "Tailles",
-        delivery: "Livraison",
-        occasions: "Occasions",
-        order: "Commander",
-        custom: "Contacter pour du sur mesure",
-        mail: "Demander plus d'informations par email"
-      },
-      cart: {
-        eyebrow: "Votre sélection",
-        title: "Panier boutique",
-        subtotal: "Sous-total",
-        order: "Commander la sélection",
-        continue: "Continuer les achats",
-        empty: "Votre panier est vide pour le moment.",
-        quantity: "Quantité"
-      },
-      badges: { new: "Nouveau", bestseller: "Best Seller" },
-      toast: {
-        addedTitle: "Ajouté au panier",
-        addedBody: "La pièce a bien été ajoutée à votre sélection.",
-        wishlistAddTitle: "Ajouté aux favoris",
-        wishlistAddBody: "Le modèle a été enregistré dans vos favoris.",
-        wishlistRemoveTitle: "Retiré des favoris",
-        wishlistRemoveBody: "Le modèle a été retiré de vos favoris.",
-        formTitle: "Message prêt",
-        formBody: "Votre messagerie va s'ouvrir pour finaliser l'envoi."
-      },
-      misc: { customOrder: "Sur commande disponible", remove: "Retirer", plus: "Augmenter", minus: "Réduire" }
+copy: {
+  fr: {
+    brandSubtitle: "Maison de Takchita",
+    nav: { collection: "Collection", about: "Maison", categories: "Catégories", testimonials: "Avis", contact: "Contact" },
+    hero: {
+      eyebrow: "Collection couture marocaine",
+      title: "Boutique de Takchita & Caftan Marocain",
+      subtitle: "Des silhouettes raffinées pensées pour le mariage, les fiançailles, l'Eid et toutes les grandes célébrations, entre savoir-faire marocain et design e-commerce haut de gamme.",
+      ctaCollection: "Voir la collection",
+      ctaOrder: "Commander maintenant",
+      metricOne: "Finitions couture & broderies main",
+      metricTwo: "Réponse personnalisée pour votre commande",
+      metricThree: "Livraison premium partout en Europe",
+      badge: "Nouvelle capsule cérémonie",
+      noteLabel: "Sur mesure",
+      noteValue: "Retouches et finitions personnalisées"
     },
-    ar: {
-      brandSubtitle: "دار التكشيطة",
-      nav: { collection: "المجموعة", about: "الدار", categories: "الفئات", testimonials: "آراء الزبونات", contact: "تواصل" },
-      hero: {
-        eyebrow: "تشكيلة أزياء مغربية فاخرة",
-        title: "بوتيك التكشيطة والقفطان المغربي",
-        subtitle: "إطلالات راقية للمناسبات الكبيرة مثل الزواج والخطوبة والعيد والسهرات، تجمع بين الحرفة المغربية والتصميم العصري الفاخر.",
-        ctaCollection: "اكتشفي المجموعة",
-        ctaOrder: "اطلبي الآن",
-        metricOne: "تشطيبات راقية وتطريز يدوي",
-        metricTwo: "رد شخصي على طلبك خلال 48 ساعة",
-        metricThree: "توصيل فاخر إلى مختلف أنحاء أوروبا",
-        badge: "كبسولة مناسبات جديدة",
-        noteLabel: "حسب الطلب",
-        noteValue: "تعديلات وتشطيبات مخصصة"
-      },
-      filters: {
-        eyebrow: "اختيار البوتيك",
-        title: "ابحثي عن الإطلالة المثالية",
-        caption: "ابحثي عن التكشيطة المناسبة، صفّي حسب الفئة، وحددي الميزانية بسهولة.",
-        searchLabel: "بحث",
-        searchPlaceholder: "الاسم، القماش، المناسبة...",
-        categoryLabel: "الفئة",
-        categoryAll: "كل الفئات",
-        priceLabel: "الحد الأقصى للسعر"
-      },
-      categories: {
-        eyebrow: "عوالم الدار",
-        title: "فئات المتجر",
-        subtitle: "موديلات مخصصة للعروس، للحفلات العائلية، وللأمسيات الأنيقة.",
-        pieces: "موديلات"
-      },
-      about: {
-        eyebrow: "عن الدار",
-        title: "أناقة مغربية بين الأصالة والحداثة",
-        text: "دار ردّام تحتفي بفن التكشيطة من خلال أقمشة نبيلة وتطريزات مضيئة وتشطيبات دقيقة. كل قطعة تجسد أنوثة مغربية راقية مستوحاة من الحفلات والتقاليد والصنعة اليدوية الرفيعة.",
-        highlightTitle: "خياطة حرفية",
-        highlightText: "خرز، سفيفة، بروكار وتفاصيل مشغولة بعناية لإطلالة ملوكية.",
-        pointOne: "أقمشة فاخرة مختارة لراحتها وانسيابها.",
-        pointTwo: "تصاميم أنثوية مستوحاة من المناسبات المغربية والقصات الحديثة.",
-        pointThree: "خدمة شخصية للتعديلات والطلبات الخاصة والنصيحة في التنسيق."
-      },
-      products: {
-        eyebrow: "قطع مميزة",
-        title: "مجموعة التكشيطة والقفطان",
-        link: "اطلبي تصميما خاصا",
-        emptyTitle: "لم يتم العثور على موديل",
-        emptyText: "غيّري الفلاتر أو اكتشفي المجموعة كاملة.",
-        stock: "المتوفر",
-        sizes: "المقاسات",
-        color: "اللون",
-        fabric: "الخامة",
-        occasion: "المناسبة",
-        details: "عرض التفاصيل",
-        add: "أضيفي إلى السلة",
-        wishlistOn: "تم تفعيل وضع المفضلة",
-        wishlistOff: "تم إلغاء وضع المفضلة"
-      },
-      benefits: { eyebrow: "لماذا نحن", title: "تجربة بوتيك فاخرة", subtitle: "كل تفصيل مدروس ليمنحك قطعة استثنائية وخدمة احترافية." },
-      testimonials: { eyebrow: "آراء الزبونات", title: "تجارب أنيقة وموثوقة", subtitle: "قطع مصممة لإبراز جمال المناسبات مع جودة تشطيب راقية." },
-      contact: {
-        eyebrow: "تواصل وطلب",
-        title: "لنتحدث عن إطلالتك المثالية",
-        text: "تواصلي مع دار ردّام للطلب أو التفصيل حسب المقاس أو الاستشارة الخاصة، وسنرد عليك بسرعة وبأسلوب راق.",
-        mailLabel: "جيميل",
-        formName: "الاسم",
-        formEmail: "البريد الإلكتروني",
-        formMessage: "الرسالة",
-        placeholderName: "اسمك",
-        placeholderEmail: "بريدك الإلكتروني",
-        placeholderMessage: "صفي المناسبة أو الطلب الذي تريدينه",
-        send: "إرسال الرسالة"
-      },
-      footer: {
-        brandText: "تكشيطة وقفطان مغربي فاخر",
-        note: "إبداعات أنثوية مستوحاة من التراث المغربي ومصممة لأجمل مناسباتك.",
-        quickLinks: "روابط سريعة",
-        categories: "الفئات",
-        contact: "تواصل",
-        rights: "جميع الحقوق محفوظة."
-      },
-      modal: { colors: "الألوان", fabric: "الخامة", sizes: "المقاسات", delivery: "التوصيل", occasions: "المناسبات", order: "اطلبي الآن", custom: "تواصل للتفصيل حسب الطلب", mail: "اطلبي معلومات أكثر عبر البريد" },
-      cart: { eyebrow: "اختياراتك", title: "سلة البوتيك", subtotal: "المجموع", order: "اطلبي هذه القطع", continue: "واصلي التسوق", empty: "سلتك فارغة حاليا.", quantity: "الكمية" },
-      badges: { new: "جديد", bestseller: "الأكثر طلبا" },
-      toast: {
-        addedTitle: "تمت الإضافة إلى السلة",
-        addedBody: "تمت إضافة القطعة إلى اختياراتك بنجاح.",
-        wishlistAddTitle: "تمت الإضافة إلى المفضلة",
-        wishlistAddBody: "تم حفظ الموديل في المفضلة.",
-        wishlistRemoveTitle: "تمت الإزالة من المفضلة",
-        wishlistRemoveBody: "تم حذف الموديل من المفضلة.",
-        formTitle: "الرسالة جاهزة",
-        formBody: "سيتم فتح بريدك لإتمام الإرسال."
-      },
-      misc: { customOrder: "إمكانية الطلب حسب المقاس", remove: "حذف", plus: "زيادة", minus: "تقليل" }
-    }
+    filters: {
+      eyebrow: "Sélection boutique",
+      title: "Trouvez votre tenue idéale",
+      caption: "Recherchez une takchita, filtrez par univers et ajustez votre budget en quelques secondes.",
+      searchLabel: "Rechercher",
+      searchPlaceholder: "Nom, tissu, occasion...",
+      categoryLabel: "Catégorie",
+      categoryAll: "Toutes les catégories",
+      priceLabel: "Prix maximum"
+    },
+    categories: {
+      eyebrow: "Univers signature",
+      title: "Catégories de la boutique",
+      subtitle: "Découvrez des pièces pensées pour la mariée, les cérémonies familiales et les soirées élégantes.",
+      pieces: "modèles"
+    },
+    about: {
+      eyebrow: "Notre maison",
+      title: "L'élégance marocaine entre tradition et modernité",
+      text: "Maison Reddam célèbre l'art de la takchita à travers des tissus nobles, des broderies lumineuses et des finitions réalisées avec soin. Chaque pièce raconte une féminité marocaine raffinée, inspirée des cérémonies, du savoir-faire artisanal et du luxe discret.",
+      highlightTitle: "Couture artisanale",
+      highlightText: "Perles, sfifa, brocart et détails cousus avec précision pour une allure majestueuse.",
+      pointOne: "Tissus premium sélectionnés pour leur tombé et leur confort.",
+      pointTwo: "Designs féminins inspirés des fêtes marocaines et des silhouettes contemporaines.",
+      pointThree: "Service personnalisé pour retouches, confection sur commande et conseils de style."
+    },
+    products: {
+      eyebrow: "Pièces en vedette",
+      title: "Collection Takchita & Caftan",
+      link: "Demander une création personnalisée",
+      emptyTitle: "Aucun modèle trouvé",
+      emptyText: "Ajustez vos filtres ou découvrez la collection complète.",
+      stock: "En stock",
+      sizes: "Tailles",
+      color: "Couleur",
+      fabric: "Matière",
+      occasion: "Occasion",
+      details: "Voir détails",
+      add: "Ajouter au panier",
+      wishlistOn: "Mode favoris activé",
+      wishlistOff: "Mode favoris désactivé"
+    },
+    benefits: {
+      eyebrow: "Pourquoi nous choisir",
+      title: "Une expérience boutique haut de gamme",
+      subtitle: "Chaque détail est pensé pour offrir une robe exceptionnelle et un accompagnement professionnel."
+    },
+    testimonials: {
+      eyebrow: "Avis clientes",
+      title: "Des retours qui parlent d'eux-mêmes",
+      subtitle: "La collection est pensée pour magnifier les grands jours avec une qualité de finition irréprochable."
+    },
+    contact: {
+      eyebrow: "Contact & commande",
+      title: "Parlons de votre tenue parfaite",
+      text: "Contactez Maison Reddam pour une commande, une demande de sur mesure ou un conseil personnalisé. Nous répondons rapidement avec une approche attentive et élégante.",
+      mailLabel: "Gmail",
+      formName: "Nom",
+      formEmail: "Email",
+      formMessage: "Message",
+      placeholderName: "Votre nom",
+      placeholderEmail: "Votre email",
+      placeholderMessage: "Décrivez votre occasion ou votre commande",
+      send: "Envoyer le message"
+    },
+    footer: {
+      brandText: "Takchita & Caftan Marocain haut de gamme",
+      note: "Des créations féminines inspirées du patrimoine marocain, pensées pour célébrer vos plus beaux moments.",
+      quickLinks: "Liens rapides",
+      categories: "Catégories",
+      contact: "Contact",
+      rights: "Tous droits réservés."
+    },
+    modal: {
+      colors: "Couleurs",
+      fabric: "Matière",
+      sizes: "Tailles",
+      delivery: "Livraison",
+      occasions: "Occasions",
+      order: "Commander",
+      custom: "Contacter pour du sur mesure",
+      mail: "Demander plus d'informations par email"
+    },
+    cart: {
+      eyebrow: "Votre sélection",
+      title: "Panier boutique",
+      subtotal: "Sous-total",
+      order: "Commander la sélection",
+      continue: "Continuer les achats",
+      empty: "Votre panier est vide pour le moment.",
+      quantity: "Quantité"
+    },
+    badges: { new: "Nouveau", bestseller: "Best Seller" },
+    toast: {
+      addedTitle: "Ajouté au panier",
+      addedBody: "La pièce a bien été ajoutée à votre sélection.",
+      wishlistAddTitle: "Ajouté aux favoris",
+      wishlistAddBody: "Le modèle a été enregistré dans vos favoris.",
+      wishlistRemoveTitle: "Retiré des favoris",
+      wishlistRemoveBody: "Le modèle a été retiré de vos favoris.",
+      formTitle: "Message prêt",
+      formBody: "Votre messagerie va s'ouvrir pour finaliser l'envoi."
+    },
+    misc: { customOrder: "Sur commande disponible", remove: "Retirer", plus: "Augmenter", minus: "Réduire" }
   },
+
+  es: {
+    brandSubtitle: "Casa de Takchita",
+    nav: { collection: "Colección", about: "Casa", categories: "Categorías", testimonials: "Opiniones", contact: "Contacto" },
+    hero: {
+      eyebrow: "Colección de costura marroquí",
+      title: "Boutique de Takchita y Caftán Marroquí",
+      subtitle: "Siluetas refinadas pensadas para bodas, compromisos, Eid y todas las grandes celebraciones, entre saber hacer marroquí y diseño e-commerce de alta gama.",
+      ctaCollection: "Ver la colección",
+      ctaOrder: "Pedir ahora",
+      metricOne: "Acabados de costura y bordados a mano",
+      metricTwo: "Respuesta personalizada para tu pedido",
+      metricThree: "Envío premium en toda Europa",
+      badge: "Nueva cápsula de ceremonia",
+      noteLabel: "A medida",
+      noteValue: "Retoques y acabados personalizados"
+    },
+    filters: {
+      eyebrow: "Selección boutique",
+      title: "Encuentra tu look ideal",
+      caption: "Busca una takchita, filtra por categoría y ajusta tu presupuesto en unos segundos.",
+      searchLabel: "Buscar",
+      searchPlaceholder: "Nombre, tejido, ocasión...",
+      categoryLabel: "Categoría",
+      categoryAll: "Todas las categorías",
+      priceLabel: "Precio máximo"
+    },
+    categories: {
+      eyebrow: "Universo de la casa",
+      title: "Categorías de la boutique",
+      subtitle: "Descubre piezas pensadas para la novia, celebraciones familiares y noches elegantes.",
+      pieces: "modelos"
+    },
+    about: {
+      eyebrow: "Nuestra casa",
+      title: "La elegancia marroquí entre tradición y modernidad",
+      text: "Maison Reddam celebra el arte de la takchita a través de tejidos nobles, bordados luminosos y acabados realizados con cuidado. Cada pieza cuenta una feminidad marroquí refinada, inspirada en las ceremonias, la artesanía y el lujo discreto.",
+      highlightTitle: "Costura artesanal",
+      highlightText: "Perlas, sfifa, brocado y detalles cosidos con precisión para una presencia majestuosa.",
+      pointOne: "Tejidos premium seleccionados por su caída y comodidad.",
+      pointTwo: "Diseños femeninos inspirados en las fiestas marroquíes y las siluetas contemporáneas.",
+      pointThree: "Servicio personalizado para retoques, confección por encargo y asesoramiento de estilo."
+    },
+    products: {
+      eyebrow: "Piezas destacadas",
+      title: "Colección Takchita y Caftán",
+      link: "Solicitar una creación personalizada",
+      emptyTitle: "No se encontró ningún modelo",
+      emptyText: "Ajusta los filtros o descubre la colección completa.",
+      stock: "En stock",
+      sizes: "Tallas",
+      color: "Color",
+      fabric: "Tejido",
+      occasion: "Ocasión",
+      details: "Ver detalles",
+      add: "Añadir al carrito",
+      wishlistOn: "Modo favoritos activado",
+      wishlistOff: "Modo favoritos desactivado"
+    },
+    benefits: {
+      eyebrow: "Por qué elegirnos",
+      title: "Una experiencia boutique de alta gama",
+      subtitle: "Cada detalle está pensado para ofrecer un vestido excepcional y un acompañamiento profesional."
+    },
+    testimonials: {
+      eyebrow: "Opiniones de clientas",
+      title: "Opiniones que hablan por sí solas",
+      subtitle: "La colección está pensada para realzar los grandes días con una calidad de acabado impecable."
+    },
+    contact: {
+      eyebrow: "Contacto y pedido",
+      title: "Hablemos de tu look perfecto",
+      text: "Contacta con Maison Reddam para un pedido, una solicitud a medida o un consejo personalizado. Respondemos rápidamente con una atención elegante y cuidada.",
+      mailLabel: "Gmail",
+      formName: "Nombre",
+      formEmail: "Email",
+      formMessage: "Mensaje",
+      placeholderName: "Tu nombre",
+      placeholderEmail: "Tu email",
+      placeholderMessage: "Describe tu ocasión o tu pedido",
+      send: "Enviar mensaje"
+    },
+    footer: {
+      brandText: "Takchita y Caftán Marroquí de alta gama",
+      note: "Creaciones femeninas inspiradas en el patrimonio marroquí, pensadas para celebrar tus momentos más bonitos.",
+      quickLinks: "Enlaces rápidos",
+      categories: "Categorías",
+      contact: "Contacto",
+      rights: "Todos los derechos reservados."
+    },
+    modal: {
+      colors: "Colores",
+      fabric: "Tejido",
+      sizes: "Tallas",
+      delivery: "Envío",
+      occasions: "Ocasiones",
+      order: "Pedir",
+      custom: "Contactar para un diseño a medida",
+      mail: "Pedir más información por email"
+    },
+    cart: {
+      eyebrow: "Tu selección",
+      title: "Carrito boutique",
+      subtotal: "Subtotal",
+      order: "Pedir la selección",
+      continue: "Seguir comprando",
+      empty: "Tu carrito está vacío por ahora.",
+      quantity: "Cantidad"
+    },
+    badges: { new: "Nuevo", bestseller: "Más vendido" },
+    toast: {
+      addedTitle: "Añadido al carrito",
+      addedBody: "La pieza se ha añadido correctamente a tu selección.",
+      wishlistAddTitle: "Añadido a favoritos",
+      wishlistAddBody: "El modelo se ha guardado en tus favoritos.",
+      wishlistRemoveTitle: "Eliminado de favoritos",
+      wishlistRemoveBody: "El modelo se ha eliminado de tus favoritos.",
+      formTitle: "Mensaje listo",
+      formBody: "Tu correo se abrirá para finalizar el envío."
+    },
+    misc: { customOrder: "Disponible por encargo", remove: "Quitar", plus: "Aumentar", minus: "Reducir" }
+  },
+
+  ar: {
+    brandSubtitle: "دار التكشيطة",
+    nav: { collection: "المجموعة", about: "الدار", categories: "الفئات", testimonials: "آراء الزبونات", contact: "تواصل" },
+    hero: {
+      eyebrow: "تشكيلة أزياء مغربية فاخرة",
+      title: "بوتيك التكشيطة والقفطان المغربي",
+      subtitle: "إطلالات راقية للمناسبات الكبيرة مثل الزواج والخطوبة والعيد والسهرات، تجمع بين الحرفة المغربية والتصميم العصري الفاخر.",
+      ctaCollection: "اكتشفي المجموعة",
+      ctaOrder: "اطلبي الآن",
+      metricOne: "تشطيبات راقية وتطريز يدوي",
+      metricTwo: "رد شخصي على طلبك خلال 48 ساعة",
+      metricThree: "توصيل فاخر إلى مختلف أنحاء أوروبا",
+      badge: "كبسولة مناسبات جديدة",
+      noteLabel: "حسب الطلب",
+      noteValue: "تعديلات وتشطيبات مخصصة"
+    },
+    filters: {
+      eyebrow: "اختيار البوتيك",
+      title: "ابحثي عن الإطلالة المثالية",
+      caption: "ابحثي عن التكشيطة المناسبة، صفّي حسب الفئة، وحددي الميزانية بسهولة.",
+      searchLabel: "بحث",
+      searchPlaceholder: "الاسم، القماش، المناسبة...",
+      categoryLabel: "الفئة",
+      categoryAll: "كل الفئات",
+      priceLabel: "الحد الأقصى للسعر"
+    },
+    categories: {
+      eyebrow: "عوالم الدار",
+      title: "فئات المتجر",
+      subtitle: "موديلات مخصصة للعروس، للحفلات العائلية، وللأمسيات الأنيقة.",
+      pieces: "موديلات"
+    },
+    about: {
+      eyebrow: "عن الدار",
+      title: "أناقة مغربية بين الأصالة والحداثة",
+      text: "دار ردّام تحتفي بفن التكشيطة من خلال أقمشة نبيلة وتطريزات مضيئة وتشطيبات دقيقة. كل قطعة تجسد أنوثة مغربية راقية مستوحاة من الحفلات والتقاليد والصنعة اليدوية الرفيعة.",
+      highlightTitle: "خياطة حرفية",
+      highlightText: "خرز، سفيفة، بروكار وتفاصيل مشغولة بعناية لإطلالة ملوكية.",
+      pointOne: "أقمشة فاخرة مختارة لراحتها وانسيابها.",
+      pointTwo: "تصاميم أنثوية مستوحاة من المناسبات المغربية والقصات الحديثة.",
+      pointThree: "خدمة شخصية للتعديلات والطلبات الخاصة والنصيحة في التنسيق."
+    },
+    products: {
+      eyebrow: "قطع مميزة",
+      title: "مجموعة التكشيطة والقفطان",
+      link: "اطلبي تصميما خاصا",
+      emptyTitle: "لم يتم العثور على موديل",
+      emptyText: "غيّري الفلاتر أو اكتشفي المجموعة كاملة.",
+      stock: "المتوفر",
+      sizes: "المقاسات",
+      color: "اللون",
+      fabric: "الخامة",
+      occasion: "المناسبة",
+      details: "عرض التفاصيل",
+      add: "أضيفي إلى السلة",
+      wishlistOn: "تم تفعيل وضع المفضلة",
+      wishlistOff: "تم إلغاء وضع المفضلة"
+    },
+    benefits: { eyebrow: "لماذا نحن", title: "تجربة بوتيك فاخرة", subtitle: "كل تفصيل مدروس ليمنحك قطعة استثنائية وخدمة احترافية." },
+    testimonials: { eyebrow: "آراء الزبونات", title: "تجارب أنيقة وموثوقة", subtitle: "قطع مصممة لإبراز جمال المناسبات مع جودة تشطيب راقية." },
+    contact: {
+      eyebrow: "تواصل وطلب",
+      title: "لنتحدث عن إطلالتك المثالية",
+      text: "تواصلي مع دار ردّام للطلب أو التفصيل حسب المقاس أو الاستشارة الخاصة، وسنرد عليك بسرعة وبأسلوب راق.",
+      mailLabel: "جيميل",
+      formName: "الاسم",
+      formEmail: "البريد الإلكتروني",
+      formMessage: "الرسالة",
+      placeholderName: "اسمك",
+      placeholderEmail: "بريدك الإلكتروني",
+      placeholderMessage: "صفي المناسبة أو الطلب الذي تريدينه",
+      send: "إرسال الرسالة"
+    },
+    footer: {
+      brandText: "تكشيطة وقفطان مغربي فاخر",
+      note: "إبداعات أنثوية مستوحاة من التراث المغربي ومصممة لأجمل مناسباتك.",
+      quickLinks: "روابط سريعة",
+      categories: "الفئات",
+      contact: "تواصل",
+      rights: "جميع الحقوق محفوظة."
+    },
+    modal: { colors: "الألوان", fabric: "الخامة", sizes: "المقاسات", delivery: "التوصيل", occasions: "المناسبات", order: "اطلبي الآن", custom: "تواصل للتفصيل حسب الطلب", mail: "اطلبي معلومات أكثر عبر البريد" },
+    cart: { eyebrow: "اختياراتك", title: "سلة البوتيك", subtotal: "المجموع", order: "اطلبي هذه القطع", continue: "واصلي التسوق", empty: "سلتك فارغة حاليا.", quantity: "الكمية" },
+    badges: { new: "جديد", bestseller: "الأكثر طلبا" },
+    toast: {
+      addedTitle: "تمت الإضافة إلى السلة",
+      addedBody: "تمت إضافة القطعة إلى اختياراتك بنجاح.",
+      wishlistAddTitle: "تمت الإضافة إلى المفضلة",
+      wishlistAddBody: "تم حفظ الموديل في المفضلة.",
+      wishlistRemoveTitle: "تمت الإزالة من المفضلة",
+      wishlistRemoveBody: "تم حذف الموديل من المفضلة.",
+      formTitle: "الرسالة جاهزة",
+      formBody: "سيتم فتح بريدك لإتمام الإرسال."
+    },
+    misc: { customOrder: "إمكانية الطلب حسب المقاس", remove: "حذف", plus: "زيادة", minus: "تقليل" }
+  }
+},
   categories: [
-    { id: "mariage", icon: "arch", title: { fr: "Takchita Mariage", ar: "تكشيطة الزفاف" }, description: { fr: "Des modèles lumineux pour les mariées, le henné et les cérémonies d'exception.", ar: "موديلات مضيئة للعروس والحنة والمناسبات الراقية." } },
-    { id: "caftan", icon: "hanger", title: { fr: "Caftan Marocain", ar: "القفطان المغربي" }, description: { fr: "Des coupes fluides et sophistiquées pour un chic intemporel.", ar: "قصات انسيابية وراقية لأناقة مغربية خالدة." } },
-    { id: "luxe", icon: "sparkle", title: { fr: "Takchita Luxe", ar: "تكشيطة فاخرة" }, description: { fr: "Tissus nobles, ceintures travaillées et finitions dignes d'une boutique premium.", ar: "أقمشة نبيلة وأحزمة فاخرة وتشطيبات تليق ببوتيك راق." } },
+    { id: "mariage", icon: "arch", title: { fr: "Takchita Mariage", es: "Takchita de Boda", ar: "تكشيطة الزفاف" }, description: { fr: "Des modèles lumineux pour les mariées, le henné et les cérémonies d'exception.", es: "Modelos brillantes para las novias, el henné y las ceremonias de lujo.", ar: "موديلات مضيئة للعروس والحنة والمناسبات الراقية." } },
+    { id: "caftan", icon: "hanger", title: { fr: "Caftan Marocain", es: "Caftan Marroquí", ar: "القفطان المغربي" }, description: { fr: "Des coupes fluides et sophistiquées pour un chic intemporel.", es: "Cortes fluidas y sofisticadas para un estilo atemporal.", ar: "قصات انسيابية وراقية لأناقة مغربية خالدة." } },
+    { id: "luxe", icon: "sparkle", title: { fr: "Takchita Luxe", es: "Takchita de Lujo", ar: "تكشيطة فاخرة" }, description: { fr: "Tissus nobles, ceintures travaillées et finitions dignes d'une boutique premium.", ar: "أقمشة نبيلة وأحزمة فاخرة وتشطيبات تليق ببوتيك راق." } },
     { id: "fete", icon: "stars", title: { fr: "Tenues de Fête", ar: "أزياء السهرات" }, description: { fr: "Des silhouettes féminines pour l'Eid, les soirées et les réceptions élégantes.", ar: "إطلالات أنثوية للعيد والسهرات والاستقبالات الراقية." } },
-    { id: "new", icon: "leaf", title: { fr: "Nouvelle Collection", ar: "المجموعة الجديدة" }, description: { fr: "Les dernières créations de la maison, pensées pour la saison.", ar: "أحدث إبداعات الدار المصممة للموسم الحالي." } },
+    { id: "new", icon: "leaf", title: { fr: "Nouvelle Collection", es: "Nueva Colleccion" ,ar: "المجموعة الجديدة" }, description: { fr: "Les dernières créations de la maison, pensées pour la saison.", ar: "أحدث إبداعات الدار المصممة للموسم الحالي." } },
     { id: "commande", icon: "needle", title: { fr: "Sur commande", ar: "حسب الطلب" }, description: { fr: "Retouches, ajustements et confection personnalisée selon votre événement.", ar: "تعديلات وخياطة خاصة حسب المناسبة والمقاس." } }
   ],
   benefits: [
