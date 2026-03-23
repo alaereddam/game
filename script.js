@@ -3,7 +3,7 @@ const { copy, categories, benefits, testimonials, products } = window.MAISON_RED
 const state = {
   locale: "fr",
   category: "all",
-  maxPrice: 350,
+  maxPrice: 10000,
   search: "",
   showWishlistOnly: false,
   wishlist: loadStorage("maison-reddam-wishlist"),
