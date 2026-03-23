@@ -237,14 +237,32 @@ function renderCart() {
 }
 
 function updateCartOrderLink(cartItems, totalAmount) {
+  const phoneNumber = "34642295198";
+
   if (!cartItems.length) {
-    elements.cartOrderLink.href = "mailto:alae200409rd@gmail.com";
+    const emptyMessage = state.locale === "ar"
+      ? "مرحبا، أريد معلومات أكثر حول منتجات المتجر."
+      : "Bonjour, je souhaite plus d'informations sur vos produits.";
+
+    elements.cartOrderLink.href = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(emptyMessage)}`;
     return;
   }
-  const intro = state.locale === "ar" ? "مرحبا، أرغب في طلب القطع التالية:" : "Bonjour, je souhaite commander les pièces suivantes :";
-  const lines = cartItems.map(({ product, quantity }) => `- ${product.names[state.locale]} x${quantity} : ${formatPrice(product.price * quantity)}`).join("\n");
-  const totalLine = state.locale === "ar" ? `المجموع: ${formatPrice(totalAmount)}` : `Total: ${formatPrice(totalAmount)}`;
-  elements.cartOrderLink.href = `mailto:alae200409rd@gmail.com?subject=${encodeURIComponent(state.locale === "ar" ? "طلب Maison Reddam" : "Commande Maison Reddam")}&body=${encodeURIComponent(`${intro}\n${lines}\n\n${totalLine}`)}`;
+
+  const intro = state.locale === "ar"
+    ? "مرحبا، أريد طلب المنتجات التالية:"
+    : "Bonjour, je souhaite commander les pièces suivantes :";
+
+  const lines = cartItems
+    .map(({ product, quantity }) => `- ${product.names[state.locale]} x${quantity} : ${formatPrice(product.price * quantity)}`)
+    .join("\n");
+
+  const totalLine = state.locale === "ar"
+    ? `المجموع: ${formatPrice(totalAmount)}`
+    : `Total: ${formatPrice(totalAmount)}`;
+
+  const message = `${intro}\n${lines}\n\n${totalLine}`;
+
+  elements.cartOrderLink.href = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 }
 
 function updateWishlistCount() {
