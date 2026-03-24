@@ -401,6 +401,62 @@
     </div>
   </aside>
 
+  <div class="checkout-modal" id="checkout-modal" aria-hidden="true">
+    <div class="checkout-modal-card">
+      <button class="icon-button ghost modal-close" id="checkout-close" type="button" aria-label="Fermer">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M6 6 18 18"></path>
+          <path d="M18 6 6 18"></path>
+        </svg>
+      </button>
+
+      <div class="checkout-layout">
+        <div class="checkout-summary">
+          <p class="eyebrow" data-checkout="eyebrow">Commande</p>
+          <h2 data-checkout="title">Finaliser votre commande</h2>
+          <p class="checkout-copy" data-checkout="subtitle">
+            Renseignez vos informations pour enregistrer votre demande de commande.
+          </p>
+
+          <div class="checkout-summary-list" id="checkout-summary-list"></div>
+
+          <div class="checkout-total-row">
+            <span data-checkout="totalLabel">Total</span>
+            <strong id="checkout-total">0 €</strong>
+          </div>
+        </div>
+
+        <div class="checkout-form-wrap">
+          <form id="checkout-form" class="checkout-form">
+            <label class="field">
+              <span data-checkout="nameLabel">Nom complet</span>
+              <input id="checkout-name" name="name" type="text" required placeholder="Votre nom">
+            </label>
+
+            <label class="field">
+              <span data-checkout="emailLabel">Email</span>
+              <input id="checkout-email" name="email" type="email" required placeholder="Votre email">
+            </label>
+
+            <label class="field">
+              <span data-checkout="phoneLabel">Téléphone</span>
+              <input id="checkout-phone" name="phone" type="tel" required placeholder="+33 ...">
+            </label>
+
+            <label class="field">
+              <span data-checkout="notesLabel">Notes</span>
+              <textarea id="checkout-notes" name="notes" rows="4" placeholder="Précisez votre occasion, taille ou demande spéciale"></textarea>
+            </label>
+
+            <button class="button primary full" id="checkout-submit" type="submit" data-checkout="submit">
+              Confirmer la commande
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="screen-overlay" id="drawer-overlay"></div>
 
   <div class="product-modal" id="product-modal" aria-hidden="true">
@@ -475,5 +531,6 @@
 
   <script src="data.js"></script>
   <script src="script.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>

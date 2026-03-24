@@ -1,0 +1,9 @@
+{
+  "name": "maison-malak-boutique",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Luxury Moroccan fashion boutique with static frontend and Node backend.",
+  "scripts": {
+    "start": "node server.js"
+  }
+}
