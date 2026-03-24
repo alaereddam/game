@@ -350,61 +350,13 @@ copy: {
     { id: "commande", icon: "needle", title: { fr: "Sur commande", ar: "حسب الطلب" }, description: { fr: "Retouches, ajustements et confection personnalisée selon votre événement.", ar: "تعديلات وخياطة خاصة حسب المناسبة والمقاس." } }
   ],
   benefits: [
-  {
-    icon: "shield",
-    title: { fr: "Haute qualité", es: "Alta calidad", ar: "جودة عالية" },
-    description: {
-      fr: "Des tissus premium et des finitions propres pour une présence impeccable.",
-      es: "Tejidos premium y acabados limpios para una presencia impecable.",
-      ar: "أقمشة فاخرة وتشطيبات دقيقة لإطلالة متقنة."
-    }
-  },
-  {
-    icon: "sparkle",
-    title: { fr: "Broderie artisanale", es: "Bordado artesanal", ar: "تطريز حرفي" },
-    description: {
-      fr: "Sfifa, perles et broderies inspirées de l'héritage marocain.",
-      es: "Sfifa, perlas y bordados inspirados en la herencia marroquí.",
-      ar: "سفيفة وخرز وتطريزات مستوحاة من التراث المغربي."
-    }
-  },
-  {
-    icon: "delivery",
-    title: { fr: "Livraison rapide", es: "Envío rápido", ar: "توصيل سريع" },
-    description: {
-      fr: "Expédition élégante et suivi de commande pour l'Europe.",
-      es: "Envío elegante y seguimiento del pedido en Europa.",
-      ar: "شحن أنيق مع تتبع الطلب داخل أوروبا."
-    }
-  },
-  {
-    icon: "crown",
-    title: { fr: "Élégance marocaine", es: "Elegancia marroquí", ar: "أناقة مغربية" },
-    description: {
-      fr: "Des coupes qui honorent la tradition tout en restant très modernes.",
-      es: "Cortes que honran la tradición sin dejar de ser muy modernos.",
-      ar: "قصات تحتفي بالأصالة وتبقى عصرية جدا."
-    }
-  },
-  {
-    icon: "chat",
-    title: { fr: "Service client réactif", es: "Atención rápida", ar: "خدمة سريعة" },
-    description: {
-      fr: "Un accompagnement chaleureux pour choisir la robe idéale.",
-      es: "Un acompañamiento cercano para elegir el vestido ideal.",
-      ar: "مرافقة أنيقة لاختيار القطعة المناسبة بسرعة."
-    }
-  },
-  {
-    icon: "diamond",
-    title: { fr: "Modèles exclusifs", es: "Modelos exclusivos", ar: "موديلات حصرية" },
-    description: {
-      fr: "Une sélection boutique pensée pour se démarquer lors des grandes occasions.",
-      es: "Una selección boutique pensada para destacar en las grandes ocasiones.",
-      ar: "تشكيلة حصرية مميزة للحفلات والمناسبات الكبيرة."
-    }
-  }
-],
+    { icon: "shield", title: { fr: "Haute qualité", es: "Alta calidad", ar: "جودة عالية" }, description: { fr: "Des tissus premium et des finitions propres pour une présence impeccable.", ar: "أقمشة فاخرة وتشطيبات دقيقة لإطلالة متقنة." } },
+    { icon: "sparkle", title: { fr: "Broderie artisanale", es: "Broderie artesanal", ar: "تطريز حرفي" }, description: { fr: "Sfifa, perles et broderies inspirées de l'héritage marocain.", ar: "سفيفة وخرز وتطريزات مستوحاة من التراث المغربي." } },
+    { icon: "delivery", title: { fr: "Livraison rapide", es: "Entrega rápida", ar: "توصيل سريع" }, description: { fr: "Expédition élégante et suivi de commande pour l'Europe.", ar: "شحن أنيق مع تتبع الطلب داخل أوروبا." } },
+    { icon: "crown", title: { fr: "Élégance marocaine", es: "Elegancia marroquí", ar: "أناقة مغربية" }, description: { fr: "Des coupes qui honorent la tradition tout en restant très modernes.", ar: "قصات تحتفي بالأصالة وتبقى عصرية جدا." } },
+    { icon: "chat", title: { fr: "Service client réactif", es: "Servicio al cliente reactivo", ar: "خدمة سريعة" }, description: { fr: "Un accompagnement chaleureux pour choisir la robe idéale.", ar: "مرافقة أنيقة لاختيار القطعة المناسبة بسرعة." } },
+    { icon: "diamond", title: { fr: "Modèles exclusifs", es: "Modelos exclusivos", ar: "موديلات حصرية" }, description: { fr: "Une sélection boutique pensée pour se démarquer lors des grandes occasions.", ar: "تشكيلة حصرية مميزة للحفلات والمناسبات الكبيرة." } }
+  ],
   testimonials: [
     { quote: { fr: "Très belle qualité, finition magnifique.", ar: "جودة رائعة وتشطيب جميل جدا." }, author: { fr: "Samira, Paris", ar: "سميرة، باريس" } },
     { quote: { fr: "La robe est encore plus belle en vrai.", ar: "الفستان أجمل بكثير في الحقيقة." }, author: { fr: "Nadia, Bruxelles", ar: "نادية، بروكسيل" } },
