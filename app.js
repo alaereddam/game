@@ -46,6 +46,54 @@ const backendUI = {
     emptyCartBody: "أضيفي قطعة واحدة على الأقل قبل تأكيد الطلب.",
     errorTitle: "الخدمة غير متاحة",
     errorBody: "تعذر على الخادم معالجة طلبك حاليا."
+  },
+  es: {
+    eyebrow: "Pedido",
+    title: "Confirmar pedido",
+    subtitle: "Introduzca su información para reservar su pieza en Aicha Caftan.",
+    totalLabel: "Total",
+    nameLabel: "Nombre completo",
+    emailLabel: "Email",
+    phoneLabel: "Teléfono",
+    notesLabel: "Notas",
+    submit: "Confirmar el pedido",
+    namePlaceholder: "Su nombre",
+    emailPlaceholder: "Su email",
+    phonePlaceholder: "+34 ...",
+    notesPlaceholder: "Añada la ocasión, talla o petición especial",
+    quantity: "Cantidad",
+    contactSuccessTitle: "Mensaje registrado",
+    contactSuccessBody: "Su mensaje ha sido enviado a la boutique con éxito.",
+    orderSuccessTitle: "Pedido registrado",
+    orderSuccessBody: (orderNumber) => `Su solicitud ha sido recibida con el número ${orderNumber}.`,
+    emptyCartTitle: "Carrito vacío",
+    emptyCartBody: "Añada al menos una pieza antes de confirmar el pedido.",
+    errorTitle: "Servicio no disponible",
+    errorBody: "El servidor no pudo procesar su solicitud en este momento."
+  },
+  en: {
+    eyebrow: "Order",
+    title: "Complete Your Order",
+    subtitle: "Enter your information to record your request with Aicha Caftan.",
+    totalLabel: "Total",
+    nameLabel: "Full Name",
+    emailLabel: "Email",
+    phoneLabel: "Phone Number",
+    notesLabel: "Notes",
+    submit: "Confirm Order",
+    namePlaceholder: "Your name",
+    emailPlaceholder: "Your email",
+    phonePlaceholder: "+44 ...",
+    notesPlaceholder: "Add occasion, size or any special request",
+    quantity: "Quantity",
+    contactSuccessTitle: "Message sent",
+    contactSuccessBody: "Your message has been sent to the boutique successfully.",
+    orderSuccessTitle: "Order received",
+    orderSuccessBody: (orderNumber) => `Your request has been received under the number ${orderNumber}.`,
+    emptyCartTitle: "Empty Cart",
+    emptyCartBody: "Add at least one piece before confirming an order.",
+    errorTitle: "Service Unavailable",
+    errorBody: "The server could not process your request at this time."
   }
 };
 
@@ -88,7 +136,8 @@ const backendElements = {
 };
 
 function backendLocale() {
-  return document.documentElement.lang === "ar" ? "ar" : "fr";
+  const lang = document.documentElement.lang;
+  return lang === "ar" ? "ar" : lang === "es" ? "es" : lang === "en" ? "en" : "fr";
 }
 
 function backendText(key) {

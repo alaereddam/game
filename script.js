@@ -123,15 +123,7 @@ function applyPremiumContent() {
       title: "Les univers Aicha Caftan",
       subtitle: "Des lignes pensées pour la mariée, les invitées raffinées et toutes les célébrations qui méritent une présence remarquable."
     },
-    about: {
-      ...copy.fr.about,
-      title: "L'élégance marocaine interprétée comme une maison de cérémonie",
-      text: "Aicha Caftan célèbre la grâce marocaine à travers des caftans et takchitas choisis pour leur tombé, leur lumière et la finesse de leurs finitions. Entre artisanat, féminité et luxe discret, chaque modèle accompagne les moments précieux avec une présence rassurante et intensément raffinée.",
-      highlightText: "Perles, sfifa, brocart et détails travaillés avec soin pour une allure noble, moderne et résolument couture.",
-      pointOne: "Des tissus premium sélectionnés pour leur fluidité, leur tenue et leur confort lors des longues cérémonies.",
-      pointTwo: "Une sélection éditoriale pensée pour le mariage, le henné, l'Eid, les fiançailles et les soirées élégantes.",
-      pointThree: "Un accompagnement humain pour les tailles, les retouches, les réservations et les demandes sur mesure."
-    },
+
     products: {
       ...copy.fr.products,
       title: "Collection signature",
@@ -324,7 +316,8 @@ function formatPrice(value) {
   const localeMap = {
     fr: "fr-FR",
     es: "es-ES",
-    ar: "ar-MA"
+    ar: "ar-MA",
+    en: "en-GB"
   };
 
   return new Intl.NumberFormat(localeMap[state.locale] || "fr-FR", {
@@ -368,6 +361,13 @@ function localizePage() {
 
   document.querySelectorAll("[data-i18n-placeholder]").forEach((element) => {
     element.placeholder = getText(element.dataset.i18nPlaceholder);
+  });
+
+  document.querySelectorAll("[data-wa-message]").forEach((element) => {
+    const message = getText(element.dataset.waMessage);
+    if (message) {
+      element.href = `https://wa.me/34642295198?text=${encodeURIComponent(message)}`;
+    }
   });
 
   document.querySelectorAll(".lang-button").forEach((button) => {
@@ -670,8 +670,9 @@ function renderModal() {
   elements.modalSizes.textContent = product.sizes.join(" · ");
   elements.modalDelivery.textContent = pickLocalized(product.delivery);
   elements.modalAddCart.dataset.id = product.id;
-  elements.modalContactLink.href = `https://wa.me/34642295198?text=${encodeURIComponent(`Bonjour Aicha Caftan, je souhaite plus d'informations sur ${localizedName}.`)}`;
-  elements.modalMailLink.href = `mailto:alae200409rd@gmail.com?subject=${encodeURIComponent(`${state.locale === "ar" ? "استفسار حول" : "Demande sur"} ${localizedName}`)}&body=${encodeURIComponent(state.locale === "ar" ? `مرحبا، أريد معلومات أكثر حول ${localizedName}.` : `Bonjour, je souhaite plus d'informations concernant ${localizedName}.`)}`;
+  const productInfoWa = state.locale === "ar" ? `مرحبا عائشة قفطان، أريد معلومات أكثر حول ${localizedName}.` : state.locale === "es" ? `Hola Aicha Caftan, deseo más información sobre ${localizedName}.` : state.locale === "en" ? `Hello Aicha Caftan, I would like more information about ${localizedName}.` : `Bonjour Aicha Caftan, je souhaite plus d'informations sur ${localizedName}.`;
+  elements.modalContactLink.href = `https://wa.me/34642295198?text=${encodeURIComponent(productInfoWa)}`;
+  elements.modalMailLink.href = `mailto:alae200409rd@gmail.com?subject=${encodeURIComponent(`${state.locale === "ar" ? "استفسار حول" : state.locale === "en" ? "Inquiry about" : state.locale === "es" ? "Consulta sobre" : "Demande sur"} ${localizedName}`)}&body=${encodeURIComponent(state.locale === "ar" ? `مرحبا، أريد معلومات أكثر حول ${localizedName}.` : state.locale === "en" ? `Hello, I would like more information about ${localizedName}.` : state.locale === "es" ? `Hola, quiero más información sobre ${localizedName}.` : `Bonjour, je souhaite plus d'informations concernant ${localizedName}.`)}`;
   elements.modalThumbnails.innerHTML = product.gallery
     .map((image, index) => `<button class="thumb-button ${index === state.activeGalleryIndex ? "is-active" : ""}" type="button" data-thumb-index="${index}"><img src="${image}" alt="${localizedName}"></button>`)
     .join("");
@@ -687,6 +688,8 @@ function updateCartOrderLink(cartItems, totalAmount) {
         ? "مرحبا، أريد معلومات أكثر حول منتجات المتجر."
         : state.locale === "es"
         ? "Hola, quiero más información sobre los productos de la tienda."
+        : state.locale === "en"
+        ? "Hello, I would like more information about the boutique products."
         : "Bonjour, je souhaite plus d'informations sur vos produits.";
 
     elements.cartOrderLink.href = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(emptyMessage)}`;
@@ -698,6 +701,8 @@ function updateCartOrderLink(cartItems, totalAmount) {
       ? "مرحبا، أريد طلب المنتجات التالية:"
       : state.locale === "es"
       ? "Hola, quiero pedir los siguientes productos:"
+      : state.locale === "en"
+      ? "Hello, I would like to order the following products:"
       : "Bonjour, je souhaite commander les pièces suivantes :";
 
   const lines = cartItems
@@ -707,6 +712,8 @@ function updateCartOrderLink(cartItems, totalAmount) {
   const totalLine =
     state.locale === "ar"
       ? `المجموع: ${formatPrice(totalAmount)}`
+      : state.locale === "en"
+      ? "Total: " + formatPrice(totalAmount)
       : "Total: " + formatPrice(totalAmount);
 
   elements.cartOrderLink.href = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(`${intro}\n${lines}\n\n${totalLine}`)}`;
