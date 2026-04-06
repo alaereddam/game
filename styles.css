@@ -1713,3 +1713,577 @@ input[type="range"] {
     align-items: end;
   }
 }
+
+/* Premium redesign overrides */
+
+.nav-bar {
+  background: rgba(255, 251, 246, 0.82);
+  border-color: rgba(183, 146, 86, 0.18);
+  box-shadow: 0 22px 45px rgba(53, 36, 18, 0.1);
+}
+
+.brand-mark {
+  background: radial-gradient(circle at top, #e7c995 0%, #c49a58 58%, #9b733d 100%);
+}
+
+.hero-section {
+  position: relative;
+  padding-top: 34px;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 34px 16px 0;
+  border-radius: 42px;
+  background:
+    linear-gradient(135deg, rgba(255, 252, 248, 0.9), rgba(243, 233, 220, 0.72)),
+    radial-gradient(circle at top right, rgba(33, 70, 58, 0.12), transparent 30%);
+  border: 1px solid rgba(183, 146, 86, 0.12);
+  box-shadow: 0 38px 80px rgba(72, 46, 20, 0.1);
+  z-index: 0;
+}
+
+.hero-layout {
+  position: relative;
+  z-index: 1;
+  gap: 56px;
+  align-items: center;
+}
+
+.hero-copy h1 {
+  max-width: 11ch;
+}
+
+.hero-lead {
+  max-width: 62ch;
+  font-size: 1.02rem;
+  color: color-mix(in srgb, var(--muted) 88%, #fff 12%);
+}
+
+.hero-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 22px 0 10px;
+}
+
+.hero-highlights span,
+.product-category-tag,
+.product-occasion-tag,
+.testimonial-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(183, 146, 86, 0.16);
+  background: rgba(255, 250, 245, 0.78);
+  color: var(--text);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.hero-link {
+  display: inline-flex;
+  margin-top: 18px;
+  color: var(--emerald);
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.hero-link:hover {
+  color: var(--emerald-soft);
+}
+
+.whatsapp-button {
+  border-color: rgba(33, 70, 58, 0.2);
+}
+
+.hero-style-card,
+.signature-card,
+.atelier-point,
+.product-support-note {
+  border: 1px solid rgba(183, 146, 86, 0.12);
+  background:
+    linear-gradient(180deg, rgba(255, 251, 246, 0.95), rgba(248, 240, 230, 0.92)),
+    radial-gradient(circle at top right, rgba(183, 146, 86, 0.14), transparent 45%);
+  box-shadow: 0 18px 35px rgba(59, 38, 19, 0.08);
+}
+
+.hero-style-card {
+  position: absolute;
+  right: -8px;
+  bottom: 18px;
+  width: min(260px, 72%);
+  padding: 20px 22px;
+  border-radius: 28px;
+  backdrop-filter: blur(12px);
+}
+
+.hero-style-card span,
+.product-support-note strong {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--gold);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.hero-style-card p,
+.product-support-note span {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.signature-strip {
+  padding-top: 0;
+}
+
+.signature-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: -10px;
+}
+
+.signature-card {
+  padding: 24px 22px;
+  border-radius: 28px;
+}
+
+.signature-card strong,
+.atelier-point strong {
+  display: block;
+  margin-bottom: 8px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.55rem;
+  font-weight: 700;
+}
+
+.signature-card span,
+.atelier-point span {
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+.atelier-section {
+  position: relative;
+}
+
+.atelier-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.04fr) minmax(0, 0.96fr);
+  gap: 32px;
+  align-items: center;
+}
+
+.atelier-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.atelier-shot {
+  overflow: hidden;
+  border-radius: 30px;
+  min-height: 260px;
+  background: rgba(255, 250, 245, 0.8);
+  box-shadow: var(--shadow-soft);
+}
+
+.atelier-shot-large {
+  grid-row: span 2;
+  min-height: 540px;
+}
+
+.atelier-shot img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.atelier-copy {
+  padding: 14px 0;
+}
+
+.atelier-copy > p:not(.eyebrow) {
+  color: var(--muted);
+  line-height: 1.85;
+}
+
+.atelier-points {
+  display: grid;
+  gap: 16px;
+  margin: 26px 0;
+}
+
+.atelier-point {
+  padding: 20px 22px;
+  border-radius: 26px;
+}
+
+.atelier-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.collection-section,
+.benefits-section,
+.testimonials-section,
+.contact-section {
+  position: relative;
+}
+
+.product-grid {
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  align-items: stretch;
+}
+
+.product-card {
+  grid-column: span 4;
+  overflow: hidden;
+  border-radius: 34px;
+  background:
+    linear-gradient(180deg, rgba(255, 252, 248, 0.98), rgba(247, 238, 228, 0.96)),
+    radial-gradient(circle at top, rgba(183, 146, 86, 0.08), transparent 32%);
+  border-color: rgba(183, 146, 86, 0.15);
+}
+
+.product-card.is-spotlight {
+  grid-column: span 8;
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+}
+
+.product-card.is-spotlight .product-media {
+  aspect-ratio: auto;
+  min-height: 100%;
+}
+
+.product-card::after {
+  content: "";
+  position: absolute;
+  inset: auto auto -60px -30px;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(216, 176, 173, 0.18), transparent 68%);
+  pointer-events: none;
+}
+
+.product-media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(29, 22, 17, 0) 48%, rgba(29, 22, 17, 0.08) 100%);
+}
+
+.product-body {
+  gap: 18px;
+  padding: 24px 24px 26px;
+}
+
+.product-label-row,
+.testimonial-topline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.product-category-tag {
+  background: rgba(255, 248, 239, 0.92);
+}
+
+.product-occasion-tag,
+.testimonial-tag {
+  border-color: rgba(33, 70, 58, 0.12);
+  color: var(--emerald);
+  background: rgba(33, 70, 58, 0.07);
+}
+
+.product-header h3 {
+  font-size: clamp(1.95rem, 2.2vw, 2.4rem);
+  line-height: 0.92;
+}
+
+.product-price {
+  color: #163e33;
+  font-size: 1.18rem;
+}
+
+.stock-pill.is-limited {
+  background: rgba(176, 93, 103, 0.1);
+  color: #9e4450;
+}
+
+.product-signature {
+  margin: -2px 0 0;
+  color: var(--gold);
+  font-size: 0.92rem;
+  font-weight: 700;
+  line-height: 1.7;
+}
+
+.product-description {
+  margin: 0;
+}
+
+.product-meta-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.product-meta-card,
+.spec-card {
+  padding: 14px 16px;
+  border-radius: 22px;
+  border: 1px solid rgba(183, 146, 86, 0.12);
+  background: rgba(255, 252, 248, 0.76);
+}
+
+.product-meta-card span,
+.spec-card span {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--muted);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.product-meta-card strong,
+.spec-card strong {
+  color: var(--text);
+  line-height: 1.55;
+}
+
+.product-support-note {
+  padding: 16px 18px;
+  border-radius: 24px;
+}
+
+.product-actions {
+  margin-top: auto;
+}
+
+.benefit-card {
+  padding: 28px;
+  border-radius: 30px;
+  background:
+    linear-gradient(180deg, rgba(255, 252, 248, 0.96), rgba(245, 236, 224, 0.9)),
+    radial-gradient(circle at top right, rgba(183, 146, 86, 0.12), transparent 50%);
+}
+
+.benefit-card .card-icon {
+  margin-bottom: 22px;
+}
+
+.testimonial-card {
+  padding: 26px;
+  border-radius: 30px;
+  background:
+    linear-gradient(180deg, rgba(255, 252, 248, 0.97), rgba(246, 238, 228, 0.9)),
+    radial-gradient(circle at top left, rgba(216, 176, 173, 0.12), transparent 50%);
+}
+
+.testimonial-card h3 {
+  font-size: 2rem;
+  line-height: 1.08;
+}
+
+.contact-copy,
+.contact-form-card,
+.product-modal-card {
+  background:
+    linear-gradient(180deg, rgba(255, 252, 248, 0.97), rgba(245, 236, 226, 0.94)),
+    radial-gradient(circle at top right, rgba(183, 146, 86, 0.1), transparent 44%);
+}
+
+.whatsapp-contact-card {
+  border-color: rgba(33, 70, 58, 0.16);
+}
+
+.contact-whatsapp-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 22px;
+  min-height: 54px;
+  padding: 0 24px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #21463a 0%, #2f6655 100%);
+  color: #fffaf5;
+  font-weight: 700;
+  box-shadow: 0 18px 32px rgba(33, 70, 58, 0.24);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.contact-whatsapp-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 24px 38px rgba(33, 70, 58, 0.26);
+}
+
+.contact-cards {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.contact-form .button {
+  margin-top: 6px;
+}
+
+.product-modal-card {
+  border-radius: 34px;
+  border: 1px solid rgba(183, 146, 86, 0.12);
+  box-shadow: 0 30px 70px rgba(52, 35, 19, 0.15);
+}
+
+.modal-main-image-wrap {
+  border-radius: 28px;
+  overflow: hidden;
+  background: rgba(255, 250, 245, 0.82);
+}
+
+.modal-signature {
+  display: block;
+  margin-bottom: 14px;
+  color: var(--gold);
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.modal-description {
+  line-height: 1.9;
+}
+
+.thumb-button {
+  border-radius: 20px;
+}
+
+.whatsapp-float {
+  position: fixed;
+  right: 18px;
+  bottom: 22px;
+  z-index: 45;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 18px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #21463a 0%, #2d6d59 100%);
+  color: #fffaf5;
+  box-shadow: 0 24px 36px rgba(33, 70, 58, 0.24);
+}
+
+.whatsapp-float svg {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.site-footer {
+  padding-top: 30px;
+}
+
+@media (max-width: 1180px) {
+  .signature-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .atelier-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .product-card,
+  .product-card.is-spotlight {
+    grid-column: auto;
+    display: flex;
+  }
+}
+
+@media (max-width: 920px) {
+  .hero-section::before {
+    inset: 28px 12px 0;
+  }
+
+  .hero-style-card {
+    position: static;
+    width: 100%;
+    margin-top: 16px;
+  }
+
+  .contact-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 720px) {
+  .hero-highlights,
+  .signature-grid,
+  .product-grid,
+  .product-meta-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-section::before {
+    border-radius: 28px;
+  }
+
+  .signature-grid {
+    display: grid;
+  }
+
+  .atelier-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .atelier-shot-large {
+    grid-row: span 1;
+    min-height: 380px;
+  }
+
+  .product-card,
+  .product-card.is-spotlight {
+    display: flex;
+    grid-column: auto;
+  }
+
+  .product-meta-grid {
+    display: grid;
+  }
+
+  .product-label-row,
+  .testimonial-topline,
+  .atelier-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .whatsapp-float {
+    right: 14px;
+    bottom: 16px;
+    padding: 14px;
+  }
+
+  .whatsapp-float span {
+    display: none;
+  }
+}

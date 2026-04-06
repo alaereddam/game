@@ -312,7 +312,7 @@ async function startServer(port = PORT) {
   const server = createServer();
   return new Promise((resolve) => {
     server.listen(port, () => {
-      console.log(`Maison Malak server running on http://localhost:${port}`);
+      console.log(`Aicha Caftan server running on http://localhost:${port}`);
       resolve(server);
     });
   });

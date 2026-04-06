@@ -55,6 +55,20 @@ const backendState = {
   orderSubmitting: false
 };
 
+Object.assign(backendUI.fr, {
+  title: "Finaliser votre demande",
+  subtitle: "Renseignez vos informations pour réserver votre pièce auprès de Aicha Caftan.",
+  phoneLabel: "Téléphone",
+  submit: "Confirmer ma commande",
+  notesPlaceholder: "Précisez votre occasion, votre taille ou toute demande spéciale",
+  quantity: "Quantité",
+  contactSuccessTitle: "Message enregistré",
+  contactSuccessBody: "Votre message a bien été envoyé à la boutique.",
+  orderSuccessTitle: "Commande enregistrée",
+  orderSuccessBody: (orderNumber) => `Votre demande a bien été reçue sous le numéro ${orderNumber}.`,
+  emptyCartBody: "Ajoutez au moins une pièce avant de confirmer une commande."
+});
+
 const backendElements = {
   toastStack: document.querySelector("#toast-stack"),
   contactForm: document.querySelector("#contact-form"),
