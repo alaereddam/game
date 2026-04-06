@@ -366,7 +366,7 @@ function localizePage() {
   document.querySelectorAll("[data-wa-message]").forEach((element) => {
     const message = getText(element.dataset.waMessage);
     if (message) {
-      element.href = `https://wa.me/34642295198?text=${encodeURIComponent(message)}`;
+      element.href = `https://wa.me/34612444463?text=${encodeURIComponent(message)}`;
     }
   });
 
@@ -671,8 +671,8 @@ function renderModal() {
   elements.modalDelivery.textContent = pickLocalized(product.delivery);
   elements.modalAddCart.dataset.id = product.id;
   const productInfoWa = state.locale === "ar" ? `مرحبا عائشة قفطان، أريد معلومات أكثر حول ${localizedName}.` : state.locale === "es" ? `Hola Aicha Caftan, deseo más información sobre ${localizedName}.` : state.locale === "en" ? `Hello Aicha Caftan, I would like more information about ${localizedName}.` : `Bonjour Aicha Caftan, je souhaite plus d'informations sur ${localizedName}.`;
-  elements.modalContactLink.href = `https://wa.me/34642295198?text=${encodeURIComponent(productInfoWa)}`;
-  elements.modalMailLink.href = `mailto:contact@aichacaftan.com?subject=${encodeURIComponent(`${state.locale === "ar" ? "استفسار حول" : state.locale === "en" ? "Inquiry about" : state.locale === "es" ? "Consulta sobre" : "Demande sur"} ${localizedName}`)}&body=${encodeURIComponent(state.locale === "ar" ? `مرحبا، أريد معلومات أكثر حول ${localizedName}.` : state.locale === "en" ? `Hello, I would like more information about ${localizedName}.` : state.locale === "es" ? `Hola, quiero más información sobre ${localizedName}.` : `Bonjour, je souhaite plus d'informations concernant ${localizedName}.`)}`;
+  elements.modalContactLink.href = `https://wa.me/34612444463?text=${encodeURIComponent(productInfoWa)}`;
+  elements.modalMailLink.href = `mailto:zerradaicha07@gmail.com?subject=${encodeURIComponent(`${state.locale === "ar" ? "استفسار حول" : state.locale === "en" ? "Inquiry about" : state.locale === "es" ? "Consulta sobre" : "Demande sur"} ${localizedName}`)}&body=${encodeURIComponent(state.locale === "ar" ? `مرحبا، أريد معلومات أكثر حول ${localizedName}.` : state.locale === "en" ? `Hello, I would like more information about ${localizedName}.` : state.locale === "es" ? `Hola, quiero más información sobre ${localizedName}.` : `Bonjour, je souhaite plus d'informations concernant ${localizedName}.`)}`;
   elements.modalThumbnails.innerHTML = product.gallery
     .map((image, index) => `<button class="thumb-button ${index === state.activeGalleryIndex ? "is-active" : ""}" type="button" data-thumb-index="${index}"><img src="${image}" alt="${localizedName}"></button>`)
     .join("");
@@ -680,7 +680,7 @@ function renderModal() {
 }
 
 function updateCartOrderLink(cartItems, totalAmount) {
-  const phoneNumber = "34642295198";
+  const phoneNumber = "34612444463";
 
   if (!cartItems.length) {
     const emptyMessage =
